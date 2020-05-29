@@ -1,0 +1,9 @@
+E:\Anoop\gdrive\Projects\true_trans\true_trans\bin\Release\true_trans.exe
+E:\Anoop\gdrive\Projects\true_trans\true_trans\bin\Release\true_trans.pdb
+E:\Anoop\gdrive\Projects\true_trans\true_trans\bin\Release\true_trans.xml
+E:\Anoop\gdrive\Projects\true_trans\true_trans\obj\Release\true_trans.Form1.resources
+E:\Anoop\gdrive\Projects\true_trans\true_trans\obj\Release\true_trans.Resources.resources
+E:\Anoop\gdrive\Projects\true_trans\true_trans\obj\Release\true_trans.vbproj.GenerateResource.Cache
+E:\Anoop\gdrive\Projects\true_trans\true_trans\obj\Release\true_trans.exe
+E:\Anoop\gdrive\Projects\true_trans\true_trans\obj\Release\true_trans.xml
+E:\Anoop\gdrive\Projects\true_trans\true_trans\obj\Release\true_trans.pdb

@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C335928D-62F6-428D-99A4-A2ADADBFC2D0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>true_trans.My.MyApplication</StartupObject>
+    <RootNamespace>true_trans</RootNamespace>
+    <AssemblyName>true_trans</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>true_trans.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>true_trans.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="kasperskylab.kis.ui">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Kaspersky Lab\Kaspersky Internet Security 17.0.0\kasperskylab.kis.ui.dll</HintPath>
+    </Reference>
+    <Reference Include="kasperskylab.kis.ui.balloons">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Kaspersky Lab\Kaspersky Internet Security 17.0.0\kasperskylab.kis.ui.balloons.dll</HintPath>
+    </Reference>
+    <Reference Include="kasperskylab.kis.ui.loader">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Kaspersky Lab\Kaspersky Internet Security 17.0.0\kasperskylab.kis.ui.loader.dll</HintPath>
+    </Reference>
+    <Reference Include="kasperskylab.kis.ui.reports.dataaccess">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Kaspersky Lab\Kaspersky Internet Security 17.0.0\kasperskylab.kis.ui.reports.dataaccess.dll</HintPath>
+    </Reference>
+    <Reference Include="kasperskylab.kis.ui.shell">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Kaspersky Lab\Kaspersky Internet Security 17.0.0\kasperskylab.kis.ui.shell.dll</HintPath>
+    </Reference>
+    <Reference Include="kasperskylab.kis.ui.toasts">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Kaspersky Lab\Kaspersky Internet Security 17.0.0\kasperskylab.kis.ui.toasts.dll</HintPath>
+    </Reference>
+    <Reference Include="kasperskylab.kis.ui.visuals">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Kaspersky Lab\Kaspersky Internet Security 17.0.0\kasperskylab.kis.ui.visuals.dll</HintPath>
+    </Reference>
+    <Reference Include="kasperskylab.platform.localization.core">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Kaspersky Lab\Kaspersky Internet Security 17.0.0\kasperskylab.platform.localization.core.dll</HintPath>
+    </Reference>
+    <Reference Include="kasperskylab.platform.nativeinterop">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Kaspersky Lab\Kaspersky Internet Security 17.0.0\kasperskylab.platform.nativeinterop.dll</HintPath>
+    </Reference>
+    <Reference Include="kasperskylab.pure.backupdiskscanner">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Kaspersky Lab\Kaspersky Internet Security 17.0.0\kasperskylab.pure.backupdiskscanner.dll</HintPath>
+    </Reference>
+    <Reference Include="kasperskylab.pure.ui.backup">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Kaspersky Lab\Kaspersky Internet Security 17.0.0\kasperskylab.pure.ui.backup.dll</HintPath>
+    </Reference>
+    <Reference Include="kasperskylab.ui.common">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Kaspersky Lab\Kaspersky Internet Security 17.0.0\kasperskylab.ui.common.dll</HintPath>
+    </Reference>
+    <Reference Include="kasperskylab.ui.common.vb">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Kaspersky Lab\Kaspersky Internet Security 17.0.0\kasperskylab.ui.common.vb.dll</HintPath>
+    </Reference>
+    <Reference Include="kasperskylab.ui.core">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Kaspersky Lab\Kaspersky Internet Security 17.0.0\kasperskylab.ui.core.dll</HintPath>
+    </Reference>
+    <Reference Include="kasperskylab.ui.core.visuals">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Kaspersky Lab\Kaspersky Internet Security 17.0.0\kasperskylab.ui.core.visuals.dll</HintPath>
+    </Reference>
+    <Reference Include="kasperskylab.ui.platform.balloons">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Kaspersky Lab\Kaspersky Internet Security 17.0.0\kasperskylab.ui.platform.balloons.dll</HintPath>
+    </Reference>
+    <Reference Include="kasperskylab.ui.platform.htmltoinlinesconverter">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Kaspersky Lab\Kaspersky Internet Security 17.0.0\kasperskylab.ui.platform.htmltoinlinesconverter.dll</HintPath>
+    </Reference>
+    <Reference Include="kasperskylab.ui.platform.ipm">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Kaspersky Lab\Kaspersky Internet Security 17.0.0\kasperskylab.ui.platform.ipm.dll</HintPath>
+    </Reference>
+    <Reference Include="kasperskylab.ui.platform.reports">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Kaspersky Lab\Kaspersky Internet Security 17.0.0\kasperskylab.ui.platform.reports.dll</HintPath>
+    </Reference>
+    <Reference Include="kasperskylab.ui.platform.reports.dataaccess">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Kaspersky Lab\Kaspersky Internet Security 17.0.0\kasperskylab.ui.platform.reports.dataaccess.dll</HintPath>
+    </Reference>
+    <Reference Include="kasperskylab.ui.platform.safemoney">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Kaspersky Lab\Kaspersky Internet Security 17.0.0\kasperskylab.ui.platform.safemoney.dll</HintPath>
+    </Reference>
+    <Reference Include="kasperskylab.ui.platform.services">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Kaspersky Lab\Kaspersky Internet Security 17.0.0\kasperskylab.ui.platform.services.dll</HintPath>
+    </Reference>
+    <Reference Include="kasperskylab.ui.platform.views">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Kaspersky Lab\Kaspersky Internet Security 17.0.0\kasperskylab.ui.platform.views.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\Bin\Net20\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="KasperskyLab.Kis.UI" />
+    <Import Include="KasperskyLab.Kis.UI.AboutWindow" />
+    <Import Include="KasperskyLab.Kis.UI.AboutWindow.View" />
+    <Import Include="KasperskyLab.Kis.UI.AboutWindow.ViewModel" />
+    <Import Include="KasperskyLab.Kis.UI.Activation" />
+    <Import Include="KasperskyLab.Kis.UI.Common" />
+    <Import Include="KasperskyLab.Kis.UI.Common.Browser" />
+    <Import Include="KasperskyLab.Kis.UI.Dashboard" />
+    <Import Include="KasperskyLab.Kis.UI.Dashboard.Converters" />
+    <Import Include="KasperskyLab.Kis.UI.Dashboard.Services" />
+    <Import Include="KasperskyLab.Kis.UI.Ksn.UserControls" />
+    <Import Include="KasperskyLab.Kis.UI.MainWindow" />
+    <Import Include="KasperskyLab.Kis.UI.MainWindow.UserControls.ButtonControls" />
+    <Import Include="KasperskyLab.Kis.UI.MainWindow.UserControls.PanelControls" />
+    <Import Include="KasperskyLab.Kis.UI.MainWindow.View" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.vb">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.vb">
+      <DependentUpon>Form5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="maglish.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="trainer.vb" />
+    <Compile Include="Watermark.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_hover -light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_hover_grey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_hover_grey1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\k.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KQI-Z6sP7MQ.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

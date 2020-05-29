@@ -1,0 +1,7 @@
+{
+	"name": "Malayalam(Default)",
+	"regex_vowels" : "malayalam\\regex\\vowels.regex",
+	"regex_consonants": "malayalam\\regex\\consonants.regex",
+	"package_pretrans_map": "malayalam\\map\\pre_trans.map",
+	"package_main_map":"malayalam\\map\\mal.map"
+}
